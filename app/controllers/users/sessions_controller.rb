@@ -3,7 +3,7 @@ class Users::SessionsController < Devise::SessionsController
 
   private 
 
-  def respond_with(_resource, options ={})
+  def respond_with(_resource, _options = {})
     render json: {
       status: {
         code: 200,
