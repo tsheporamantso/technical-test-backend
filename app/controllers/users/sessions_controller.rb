@@ -1,7 +1,7 @@
 class Users::SessionsController < Devise::SessionsController
   respond_to :json
 
-  private 
+  private
 
   def respond_with(_resource, _options = {})
     render json: {
